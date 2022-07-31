@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?&family=Ubuntu');
+:root{
+    --line-border-fill:#3498db;
+    --line-border-empty:#e0e0e0;
+}
+*{
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #f6f7fb;
+    font-family:'Ubuntu', sans-serif ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-X: hidden;
+    margin: 0;
+
+}
+.bg{
+    background: url('jussi-hellsten-1uwLmA5LFfg-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -30;
+    left: -30;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    /* ***************we want it behind the 0%********** */
+    filter: blur(30px)
+    
+}
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
